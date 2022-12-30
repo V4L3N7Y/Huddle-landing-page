@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background-color: var(--Violet);
+    color: aliceblue;
+}
+
+
+@media screen and (min-width:1140px){
+
+    /* Desktop */
+
+.bg-image {   
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;   
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin: auto auto;
+}
+
+.logo-huddle {
+   margin: 3rem 70rem 0 0;
+}
+
+.illustration {
+    margin: auto auto;
+    padding:  3rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    max-width: 25rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    line-height: 2rem;
+    margin-top: 2rem;
+    max-width: 30rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.icons {
+    font-size:xx-large;
+    display: flex;
+    margin: auto auto;
+    gap:1.5rem;
+}
+
+button {
+  margin-top: 3rem;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 64px;
+  text-align: center;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  width: auto;
+  
+}
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:710px){
+   
+    
+    .bg-image {   
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;   
+    }
+
+
+    .logo-huddle {
+        display: flex;
+        font-size: small;
+        max-height: 3rem;
+        margin: auto 0;     
+     }
+
+
+    .illustration {
+        display: flex;
+        height: 18rem;
+        margin: auto auto;
+    } 
+
+    .text {
+        margin: auto auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: auto auto;
+        padding-bottom: 1.2rem;
+        max-width: 20rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    p {
+        text-align: center;
+        line-height: 1.5rem;
+        margin: auto auto;
+        max-width: 20rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    button {
+        display: flex;
+        margin: auto auto;
+        margin-top: 1.5rem;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 24px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+        color: #3c4043;
+        cursor: pointer;
+        font-family: "Google Sans",Roboto,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 48px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 64px;
+        text-align: center;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;  
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto;
+        gap: 10px;
+        font-size:xx-large;
+    }
+
+}
+
+
+/* Tablet */
+
+@media screen and (max-width:1140px ){ 
+    
+    .bg-image {   
+        background-image: url(../images/bg-mobile.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;   
+    }
+
+    .logo-huddle {
+        display: flex;
+        min-width: 100px;
+        min-height: 100px;
+        max-height: 3rem;
+        margin: auto auto;   
+        margin-bottom: 2rem;  
+        margin-top:2rem;
+     }
+
+
+    .illustration {
+        display: flex;
+        max-height: 35rem;
+        margin: auto auto;
+    } 
+
+    .text {
+        margin: auto auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: auto auto;
+        padding-bottom: 1.2rem;
+        max-width: 40rem;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    p {
+        text-align: center;
+        line-height: 1.5rem;
+        margin: auto auto;
+        max-width: 30rem;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    button {
+        display: flex;
+        margin: auto auto;
+        margin-top: 1.5rem;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 24px;
+        border-style: none;
+        box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+        color: #3c4043;
+        cursor: pointer;
+        font-family: "Google Sans",Roboto,Arial,sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 48px;
+        justify-content: center;
+        letter-spacing: .25px;
+        line-height: normal;
+        max-width: 100%;
+        overflow: visible;
+        padding: 2px 64px;
+        text-align: center;
+        transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;  
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto auto;
+        gap: 5rem;
+        font-size:xx-large;
+    }
+     
+}
+
+
